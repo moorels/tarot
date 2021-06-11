@@ -1,9 +1,26 @@
+
+
+
+
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from './header'
 
+
+
+
+
+
+
+
 export default function Home() {
+
+
+
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +32,50 @@ export default function Home() {
 
 
       <main className={styles.main}>
-        <div>Hello Main</div>
+
+
+
+        <div className={styles.wrapper} >
+
+        <div className={styles.wrapper}>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+       
+       
+       
+       
+       </div>
+        
+        
+        <div className={styles.wrapperleft}>
+        
+        <div>tester</div>
+        <div>tester</div>
+        <div>tester</div>
+        <div >tester</div>
+        </div>
+        
+        
+        
+        
+        
+
+        
+        
+        </div>
+        
+        
+      
+      
+      
+      
       </main>
 
       <footer className={styles.footer}>
