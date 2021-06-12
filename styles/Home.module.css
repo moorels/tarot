@@ -9,13 +9,14 @@
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: grid;
+  
 }
 
 .footer {
@@ -25,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(148, 233, 248);
+  background-color: rgb(191, 241, 7);
 }
 
 .footer a {
@@ -38,11 +39,12 @@
 .header {
   width: 100%;
   height: 100px;
-  background-color: rgb(148, 233, 248);
+  background-color: rgb(241, 238, 49);
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .header a {
@@ -50,6 +52,8 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  padding: auto;
+  
 }
 
 .title a {
@@ -66,39 +70,41 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding-left: 130px;
-  grid-gap:1em;
+  padding: auto;
+  
   grid-auto-rows: minmax(100px, auto);
 }
 .wrapper > div {
-  background:#eaeaea;
-  padding:3em;
+  background:#ffffff;
+  padding-left: 30px;
+  padding: auto;
 }
 
-.nested {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  
-  grid-gap:1em;
-  grid-auto-rows: minmax(100px, auto);
 
+
+.images {
+  padding: auto;
+  height: 200px;
 }
 .wrapper > div:nth-child(odd) {
-  background:#ddd;
+  background:rgb(255, 255, 255);
+  padding: auto;
+  
 }
 .wrapperleft {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  padding-left: 330px;
-  padding-top: 50px;
-  max-width: 240px;
+  padding: auto;
+  padding-left: 30px;
+  
 }
 .wrapperleft > div {
-  background:#eaeaea;
-  padding:3em;
+  background:#ffffff;
+  padding: auto;
 }
 .wrapperleft > div:nth-child(odd) {
-  background:#ddd;
+  background:rgb(255, 255, 255);
+  padding: auto;
 }
 
 
@@ -117,54 +123,6 @@
 .description {
   line-height: 1.5;
   font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
 }
 
 .logo {
