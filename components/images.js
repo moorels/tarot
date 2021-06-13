@@ -315,19 +315,17 @@ const image_array = [
   imgz78,
   
 ]
-
 export function getrandom () {
   const random_index = Math.floor(Math.random() * image_array.length)
 
   const selected_image = image_array[random_index]
 
-
-
-
-
   return (
     selected_image
+    
     )
     
 }
+
+
 console.log(getrandom())
