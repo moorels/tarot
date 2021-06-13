@@ -5,20 +5,10 @@ import React from 'react'
 import {getrandom} from '../components/images'
 
 
-
-
-
-
 export default function Home() {
 
-  var number = Math.floor(Math.random() * 9) + 1;
-
-
-
   return (
-    
     <div >
-     
     <div >
       <Head>
         <title>HelloHead</title>
@@ -26,34 +16,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 <Header />
-</div>
+</div><div><button>Shuffle deck</button></div>
 
       <main className={styles.main}>
-    
-
         <div className={styles.wrapper} >
-
         <div className={styles.wrapper}>
-        <div>
-
-
-
-        </div>
+        <div></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
-        <div>
-
-
-        </div>
+        <div></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
         <div></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
-        <div></div>
-       
-       </div>
+        <div></div></div>
         <div className={styles.wrapperleft}>
-        
         <div><img className={styles.images} src={getrandom()}></img></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
         <div><img className={styles.images} src={getrandom()}></img></div>
@@ -61,7 +38,6 @@ export default function Home() {
         </div>
         </div>
       </main>
-
       <footer className={styles.footer}>
         <div>Hello Footer</div>
       </footer>
