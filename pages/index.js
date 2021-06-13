@@ -2,50 +2,23 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from './header'
 import React from 'react'
+import {getrandom} from '../components/images'
 
 
-
-import img1 from "../images/4.jpg"
-import img2 from "../images/3.jpg"
-import img3 from "../images/6.jpg"
-import img4 from "../images/7.jpg"
-import img5 from "../images/8.jpg"
-import img6 from "../images/22.jpg"
-import img7 from "../images/11.jpg"
-import img8 from "../images/15.jpg"
-import img9 from "../images/18.jpg"
 
 
 
 
 export default function Home() {
 
-  
-  const numc = Math.floor(Math.random() * 10) + 1
-
-
-const i1 = img1
-const i2 = img2
-const i3 = img3
-const i4 = img4
-const i5 = img5
-const i6 = img6
-const i7 = img7
-const i8 = img8
-const i9 = img9
-
-const number = Math.floor(Math.random() * 10) + 1;
-  
-
-const x1 = `i${number}`
-console.log(i1)
-
+  var number = Math.floor(Math.random() * 9) + 1;
 
 
 
   return (
     
     <div >
+     
     <div >
       <Head>
         <title>HelloHead</title>
@@ -56,37 +29,37 @@ console.log(i1)
 </div>
 
       <main className={styles.main}>
-      
-     
+    
 
         <div className={styles.wrapper} >
 
         <div className={styles.wrapper}>
+        <div>
+
+
+
+        </div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div>
+
+
+        </div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
         <div></div>
-        <div><img className={styles.images} src={i6}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
         <div></div>
-        <div><img className={styles.images} src={img2}></img></div>
-        <div><img className={styles.images} src={img3}></img></div>
-        <div><img className={styles.images} src={img4}></img></div>
-        <div></div>
-        <div><img className={styles.images} src={img5}></img></div>
-        <div></div>
-       
        
        </div>
-        
-        
         <div className={styles.wrapperleft}>
         
-        <div><img className={styles.images} src={img6}></img></div>
-        <div><img className={styles.images} src={img7}></img></div>
-        <div><img className={styles.images} src={img8}></img></div>
-        <div ><img className={styles.images} src={img9}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div ><img className={styles.images} src={getrandom()}></img></div>
         </div>
-        
-        
         </div>
-      
       </main>
 
       <footer className={styles.footer}>
