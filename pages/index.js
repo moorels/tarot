@@ -2,10 +2,23 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from './header'
 import React from 'react'
-import {getrandom} from '../components/images'
-
+import { Imagestest } from '../components/images'
+import Image from 'next/image'
 
 export default function Home() {
+
+
+  var x = "";
+  const numm = [];
+
+for (var i =0;i<9;i++) {
+  x = Math.floor(Math.random() * 150 ) + 1
+numm.push(x)
+
+}
+console.log(numm)
+ 
+
 
   return (
     <div >
@@ -22,19 +35,65 @@ export default function Home() {
         <div className={styles.wrapper} >
         <div className={styles.wrapper}>
         <div></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><Image 
+        src = {`/${numm[0]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image>test1</div>
         <div></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><Image 
+        src = {`/${numm[1]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image>test2</div>
+        <div><Image 
+        src = {`/${numm[2]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
+        <div><Image 
+        src = {`/${numm[3]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
         <div></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
+        <div><Image 
+        src = {`/${numm[4]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
         <div></div></div>
         <div className={styles.wrapperleft}>
-        <div><img className={styles.images} src={getrandom()}></img></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
-        <div><img className={styles.images} src={getrandom()}></img></div>
-        <div ><img className={styles.images} src={getrandom()}></img></div>
+        <div><Image 
+        src = {`/${numm[5]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
+        <div><Image 
+        src = {`/${numm[6]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
+        <div><Image 
+        src = {`/${numm[7]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
+        <div><Image 
+        src = {`/${numm[2]}.jpg`}
+        width = {120}
+        height={200}
+        layout="fixed"
+        ></Image></div>
+        
         </div>
         </div>
       </main>
