@@ -70,14 +70,14 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding: auto;
+  padding-left: 30px;
   
   grid-auto-rows: minmax(100px, auto);
 }
 .wrapper > div {
   background:#ffffff;
   padding-left: 30px;
-  padding: auto;
+  
 }
 
 
@@ -88,7 +88,7 @@
 }
 .wrapper > div:nth-child(odd) {
   background:rgb(255, 255, 255);
-  padding: auto;
+  padding-left: 30px
   
 }
 .wrapperleft {
@@ -100,11 +100,11 @@
 }
 .wrapperleft > div {
   background:#ffffff;
-  padding: auto;
+  padding-left: 30px;
 }
 .wrapperleft > div:nth-child(odd) {
   background:rgb(255, 255, 255);
-  padding: auto;
+  padding-left: 30px;
 }
 
 
