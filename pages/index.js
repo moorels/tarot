@@ -7,27 +7,9 @@ import Image from 'next/image'
 
 export default function Home() {
 
+  const numm = Imagestest();
 
-  var x = "";
-  const numm = [];
-
-for (var i =0;i<9;i++) {
-  x = Math.floor(Math.random() * 150 ) + 1
-numm.push(x)
-
-}
-console.log(numm)
- 
-const [show, setShow] = React.useState(false)
-
-
-React.useEffect(() => {
-    setTimeout(() => {
-      setShow(true)
-    }, 2000)
-  }, [show])
-
-  if (!show) return null
+  console.log(numm)
 
   return (
     <div >
@@ -49,14 +31,14 @@ React.useEffect(() => {
         width = {120}
         height={200}
         layout="fixed"
-        ></Image>test1</div>
+        ></Image></div>
         <div></div>
         <div><Image 
         src = {`/${numm[1]}.jpg`}
         width = {120}
         height={200}
         layout="fixed"
-        ></Image>test2</div>
+        ></Image></div>
         <div><Image 
         src = {`/${numm[2]}.jpg`}
         width = {120}
@@ -102,7 +84,7 @@ React.useEffect(() => {
         height={200}
         layout="fixed"
         ></Image></div>
-        
+      
         </div>
         </div>
       </main>
