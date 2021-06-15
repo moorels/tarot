@@ -1,10 +1,16 @@
+
+
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from './header'
-import React from 'react'
+import React, { useState } from 'react'
 import Mainloader from '../components/mainpage'
 
 export default function Home() {
+
+const [active, setActive] = useState()
+
+
 
   return (
     <div >
@@ -15,10 +21,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 <Header />
-</div><div><button>Shuffle deck</button></div>
+</div>
+<div><button onClick={()=> setActive("main")}>Shuffle deck</button>
+<button onClick={()=> setActive("main2")}>Shuffle deck</button>
+
+</div>
 
       <main className={styles.main}>
-        <Mainloader/>
+      {active === "main" && <Mainloader/>}
+      {active === "main2" && <Mainloader/>}
       </main>
       <footer className={styles.footer}>
         <div>Hello Footer</div>
