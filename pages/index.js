@@ -79,7 +79,7 @@ export default function Home() {
         layout="fixed"
         ></Image></div>
         <div><Image 
-        src = {`/${numm[2]}.jpg`}
+        src = {`/${numm[8]}.jpg`}
         width = {120}
         height={200}
         layout="fixed"
