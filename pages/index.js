@@ -2,14 +2,9 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Header from './header'
 import React from 'react'
-import { Imagestest } from '../components/images'
-import Image from 'next/image'
+import Mainloader from '../components/mainpage'
 
 export default function Home() {
-
-  const numm = Imagestest();
-
-  console.log(numm)
 
   return (
     <div >
@@ -23,70 +18,7 @@ export default function Home() {
 </div><div><button>Shuffle deck</button></div>
 
       <main className={styles.main}>
-        <div className={styles.wrapper} >
-        <div className={styles.wrapper}>
-        <div></div>
-        <div><Image 
-        src = {`/${numm[0]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div></div>
-        <div><Image 
-        src = {`/${numm[1]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div><Image 
-        src = {`/${numm[2]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div><Image 
-        src = {`/${numm[3]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div></div>
-        <div><Image 
-        src = {`/${numm[4]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div></div></div>
-        <div className={styles.wrapperleft}>
-        <div><Image 
-        src = {`/${numm[5]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div><Image 
-        src = {`/${numm[6]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div><Image 
-        src = {`/${numm[7]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-        <div><Image 
-        src = {`/${numm[8]}.jpg`}
-        width = {120}
-        height={200}
-        layout="fixed"
-        ></Image></div>
-      
-        </div>
-        </div>
+        <Mainloader/>
       </main>
       <footer className={styles.footer}>
         <div>Hello Footer</div>
