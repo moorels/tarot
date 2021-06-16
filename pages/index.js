@@ -8,8 +8,13 @@ import Mainloader from '../components/mainpage'
 
 export default function Home() {
 
-const [active, setActive] = useState()
+const [toggle, setToggle] = useState(false)
 
+
+function resetState () {
+
+useState(false)
+}
 
 
   return (
@@ -22,14 +27,15 @@ const [active, setActive] = useState()
       </Head>
 <Header />
 </div>
-<div><button onClick={()=> setActive("main")}>Shuffle deck</button>
-<button onClick={()=> setActive("main2")}>Shuffle deck</button>
+<div>
+
+<button onClick={()=> setToggle(!toggle)  }>Shuffle deck</button>
 
 </div>
 
       <main className={styles.main}>
-      {active === "main" && <Mainloader/>}
-      {active === "main2" && <Mainloader/>}
+      {toggle == (true) && <Mainloader/>}
+      {toggle == (!true) && <Mainloader/>}
       </main>
       <footer className={styles.footer}>
         <div>Hello Footer</div>
