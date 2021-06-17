@@ -36,6 +36,7 @@ useState(false)
       <main className={styles.main}>
       {toggle == (true) && <Mainloader/>}
       {toggle == (!true) && <Mainloader/>}
+     
       </main>
       <footer className={styles.footer}>
         <div>Hello Footer</div>

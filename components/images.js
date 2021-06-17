@@ -1,7 +1,6 @@
 export function Imagestest () {
 
   
-  
   function arrayUnique(array) {
     var a = array.concat();
     for(var i=0; i<a.length; ++i) {
@@ -14,7 +13,6 @@ export function Imagestest () {
     return a;
 }
 
-
 var numm = [];
 var numm1 = [];
 while(numm.length < 30){
@@ -22,15 +20,10 @@ while(numm.length < 30){
     if(numm.indexOf(r) === -1) numm.push(r);
 }
 
-
-
 while(numm1.length < 30){
   var r = Math.floor(Math.random() * (187 - 110 + 1) + 110);
   if(numm1.indexOf(r) === -1) numm1.push(r);
 }
-
-
-
 
 var nummfinal = arrayUnique(numm.concat(numm1))
 
@@ -40,7 +33,6 @@ for(let i = nummfinal.length - 1; i > 0; i--){
   nummfinal[i] = nummfinal[j]
   nummfinal[j] = temp
 }
-
 
 return (
 
